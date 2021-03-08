@@ -1,0 +1,68 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row mb-2">
+            <div class="col-lg-6">
+                <h5 class="titulo mb-3">Crear tarjeta</h5>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-end">
+                <button class="btn btn-primary" (click)="limpiarFormulario()">Nuevo</button>
+            </div>        
+        </div>
+        <form [formGroup]="form" (ngSubmit)="guardarDatos()">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <i class="far fa-user-circle" [ngClass]="getClase('nombre')"></i></span>
+                        <input type="text" formControlName="nombre" class="form-control" placeholder="Nombre">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="far fa-cocktail" [ngClass]="getClase('tipo')"></i></span>
+                        <select name="select" formControlName="tipo" class="form-control">
+                            <option value="boliche">Boliche</option>
+                            <option value="bar">Bar</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">                                                                                     
+                <span class="input-group-text"><i class="far fa-map-marker" [ngClass]="getClase('direccion')"></i></span>
+                <input type="text" formControlName="direccion" class="form-control" placeholder="Dirección">
+            </div>           
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="far fa-calendar" [ngClass]="getClase('anioinicio')"></i></span>
+                        <input type="number" formControlName="anioinicio" class="form-control" placeholder="Año inicio">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="far fa-calendar" [ngClass]="getClase('aniofin')"></i></span>
+                        <input type="number" formControlName="aniofin" class="form-control" placeholder="Año cierre">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="far fa-arrows-v" [ngClass]="getClase('latitud')"></i></span>
+                        <input type="number" formControlName="latitud" class="form-control" placeholder="Latitud">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="far fa-arrows-h" [ngClass]="getClase('longitud')"></i></span>
+                        <input type="number" formControlName="longitud" class="form-control" placeholder="Longitud">
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="verAlerta" class="alert alert-danger" role="alert">Faltan completar datos</div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-success btn-lg" type="submit">Guardar</button>
+              </div>            
+        </form>
+    </div>
+</div>

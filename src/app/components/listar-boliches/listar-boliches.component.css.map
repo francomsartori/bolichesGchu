@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,MAAM,EAAE,OAAO",
+"sources": ["listar-boliches.component.scss"],
+"names": [],
+"file": "listar-boliches.component.css"
+}

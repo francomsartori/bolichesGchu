@@ -1,0 +1,28 @@
+<div class="container p-0">
+    <table class="table table-hover table-sm mb-3">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Dirección</th>
+                <th>Año inicio</th>
+                <th (click)="activarModoEdicion()" >Año cierre</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>  
+        </thead>
+        <tbody virtualScroll *ngFor="let boliche of listaBoliches">
+            <tr>
+                <td>{{boliche.nombre}}</td>
+                <td><i [ngClass]="boliche.tipo=='bar' ? 'far fa-beer' : 'far fa-cocktail'"></i></td>
+                <td>{{boliche.direccion}}</td>
+                <td>{{boliche.anioinicio}}</td>
+                <td>{{boliche.aniofin | aniocierre}}</td>
+                <td *ngIf="modoEdicion()"><i (click)="editarBoliche(boliche)" class='far fa-edit'></i></td>
+                <td *ngIf="modoEdicion()"><i (click)="eliminarBoliche(boliche.id)" class='far fa-trash-alt'></i></td>
+                <td><i (click)="posicionarBoliche(boliche)" class='far fa-map-marker'></i></td>
+            </tr>     
+        </tbody>
+    </table>
+</div>

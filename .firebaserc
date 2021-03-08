@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "bolichesgchu": {
+      "hosting": {
+        "boliches2": [
+          "bolichesgchu"
+        ]
+      }
+    }
+  }
+}
