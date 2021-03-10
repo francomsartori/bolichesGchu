@@ -49,6 +49,8 @@ export class MapaComponent implements OnInit {
       }
       
       Leaflet.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Boliches'}).addTo(this.map);
+
+      Leaflet.Icon.Default.imagePath = "/assets/leaflet/"
     };
   }
 
