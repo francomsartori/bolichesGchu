@@ -12,9 +12,10 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class CrearBolicheComponent implements OnInit, OnDestroy {
   form: FormGroup;
-  suscription : Subscription;
+  suscription : Subscription | undefined;
   id : string | undefined;
   verAlerta : boolean;
+  boliche : Boliche | undefined;
 
   constructor(private fb: FormBuilder, private _bolicheService : BolicheService, private toastr: ToastrService) { 
     this.verAlerta = false;
@@ -33,16 +34,16 @@ export class CrearBolicheComponent implements OnInit, OnDestroy {
       this.id = data.id;
       this.form.patchValue({
         nombre : data.nombre,
-        tipo : data.tipo,
-        direccion : data.direccion,
-        anioinicio : data.anioinicio,
-        aniofin : data.aniofin,
-        latitud : data.latitud,
-        longitud : data.longitud
+        tipo          : data.tipo,
+        direccion     : data.direccion,
+        anioinicio    : data.anioinicio,
+        aniofin       : data.aniofin,
+        latitud       : data.latitud,
+        longitud      : data.longitud
       })
     }, error => {
       console.log(error);
-    })
+    })   
   }
 
   ngOnInit(): void {
@@ -57,25 +58,54 @@ export class CrearBolicheComponent implements OnInit, OnDestroy {
 
     this.verAlerta = false;
 
-    if (this.id == undefined){
-      this.crearTarjeta();
+    if (this.id === '' || this.id === undefined){
+      this.crearBoliche();
     } else {
-      this.editarTarjeta();
+      this.editarBoliche();
     }
   }
 
-  crearTarjeta(): void{
-    const BOLICHE : Boliche = {
-      nombre :        this.form.value.nombre,
-      tipo :          this.form.value.tipo,
-      direccion :     this.form.value.direccion,
-      anioinicio :    this.form.value.anioinicio,
-      aniofin :       this.form.value.aniofin,
-      latitud :       this.form.value.latitud,
-      longitud :      this.form.value.longitud
-    }
+  cargarObjectoBoliche(id : string | undefined, form : FormGroup): any{
+
+    return {
+      nombre :        form.value.nombre,
+      tipo :          form.value.tipo,
+      direccion :     form.value.direccion,
+      anioinicio :    form.value.anioinicio,
+      aniofin :       form.value.aniofin,
+      latitud :       form.value.latitud,
+      longitud :      form.value.longitud
+      }
+
+    /*
+    if (id === undefined){
+      return {
+        nombre :        form.value.nombre,
+        tipo :          form.value.tipo,
+        direccion :     form.value.direccion,
+        anioinicio :    form.value.anioinicio,
+        aniofin :       form.value.aniofin,
+        latitud :       form.value.latitud,
+        longitud :      form.value.longitud
+        }
+    } else {
+      return {id:             id,
+        nombre :        form.value.nombre,
+        tipo :          form.value.tipo,
+        direccion :     form.value.direccion,
+        anioinicio :    form.value.anioinicio,
+        aniofin :       form.value.aniofin,
+        latitud :       form.value.latitud,
+        longitud :      form.value.longitud
+        }
+    } */
+  }
+
+  crearBoliche(): void{
+    const BOLICHE : Boliche = this.cargarObjectoBoliche(this.id, this.form);
 
     this._bolicheService.guardarBoliche(BOLICHE).then( () => {
+      this._bolicheService.setBoliche(BOLICHE);
       this.form.reset();
       this.toastr.success('Boliche creado con éxito', 'Boliches');
     }, error => {
@@ -83,19 +113,11 @@ export class CrearBolicheComponent implements OnInit, OnDestroy {
     });
   }
 
-  editarTarjeta(): void{
-    const BOLICHE : Boliche = {
-      id :            this.id,
-      nombre :        this.form.value.nombre,
-      tipo :          this.form.value.tipo,
-      direccion :     this.form.value.direccion,
-      anioinicio :    this.form.value.anioinicio,
-      aniofin :       this.form.value.aniofin,
-      latitud :       this.form.value.latitud,
-      longitud :      this.form.value.longitud
-    }
+  editarBoliche(): void{
+    const BOLICHE : Boliche = this.cargarObjectoBoliche(this.id, this.form);
 
     this._bolicheService.editarBoliche(BOLICHE).then( () => {
+      this._bolicheService.setBoliche(BOLICHE);
       this.form.reset();
       this.toastr.success('Boliche editado con éxito', 'Boliches');
     }, error => {
@@ -117,12 +139,14 @@ export class CrearBolicheComponent implements OnInit, OnDestroy {
 
   limpiarFormulario(): void{
     this.form.reset();
-    this.id = undefined;
+    this.id = undefined; //'';
+    //const BOLICHE : Boliche = this.cargarObjectoBoliche(this.id, this.form);
+    //this._bolicheService.setBoliche(BOLICHE);
     this.verAlerta = false;
   }
 
   ngOnDestroy(): void {
-    this.suscription.unsubscribe();
+  //  this.suscription.unsubscribe();
   }
 
 }

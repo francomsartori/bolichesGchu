@@ -2,7 +2,13 @@
     cursor: pointer;
 }
 
-.container{
-    height:90vh;
+.listado{
+    height:94vh;
     overflow-y: scroll;
 }
+
+th{
+    position: sticky; 
+    top: 0;
+    background-color: white;
+  }

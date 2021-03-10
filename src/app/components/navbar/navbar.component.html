@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <span class="navbar-brand" routerLink="listado"> <a class="brand" routerLink="listado">Boliches de Gualeguaychú</a>  </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+            <ul class="nav navbar-nav nav-pills">
+                <li *ngIf="modoEdicion()" class="nav-item">
+                    <button class="btn btn-outline-primary" routerLink="crear" type="button"> {{ titulo }} </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary"  (click)="posicionarBoliches()" type="button"> {{tituloPosicionarMapa }} </button>
+                </li>
+            </ul>
+            <div class="d-flex form-group">              
+                <input [(ngModel)]="textoBuscar" (ngModelChange)="buscarBolicheChange($event)" class="form-control me-2" type="search" placeholder="Buscar">
+                <button (click)="buscarBoliche()" class="btn btn-outline-primary">Buscar</button>
+            </div>
+        </div>
+    </div>
+</nav>

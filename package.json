@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~11.0.1",
     "@angular/router": "~11.0.1",
     "@asymmetrik/ngx-leaflet": "^7.0.1",
-    "@popperjs/core": "^2.9.0",
+    "@popperjs/core": "^2.9.1",
     "@types/leaflet": "^1.5.23",
     "bootstrap": "^5.0.0-beta2",
     "firebase": "^7.0 || ^8.0",
