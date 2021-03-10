@@ -65,7 +65,7 @@ export class ListarBolichesComponent implements OnInit {
   }
 
   activarModoBorrar(): void{
-    if(this.modoContador<this.cantidad){
+    /*if(this.modoContador<this.cantidad){
       this.modoContador++;
       if (this.modoContador == this.cantidad){
         this._bolicheService.setModoBorrar(true);
@@ -73,7 +73,7 @@ export class ListarBolichesComponent implements OnInit {
     } else {
         this.modoContador--;
         this._bolicheService.setModoBorrar(false);
-      }  
+      }  */
   }
   
   bolicheOK(boliche: Boliche): boolean{

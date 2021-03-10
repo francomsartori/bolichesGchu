@@ -28,6 +28,7 @@ export class CrearBolicheComponent implements OnInit, OnDestroy {
       aniofin : [''],
       latitud : [''],
       longitud : [''],
+      fechaverificada : ['']
     });
 
     this.suscription = this._bolicheService.getBoliche().subscribe(data => {
@@ -39,7 +40,8 @@ export class CrearBolicheComponent implements OnInit, OnDestroy {
         anioinicio    : data.anioinicio,
         aniofin       : data.aniofin,
         latitud       : data.latitud,
-        longitud      : data.longitud
+        longitud      : data.longitud,
+        fechaverificada : data.fechaverificada
       })
     }, error => {
       console.log(error);
@@ -65,44 +67,21 @@ export class CrearBolicheComponent implements OnInit, OnDestroy {
     }
   }
 
-  cargarObjectoBoliche(id : string | undefined, form : FormGroup): any{
-
-    return {
-      nombre :        form.value.nombre,
-      tipo :          form.value.tipo,
-      direccion :     form.value.direccion,
-      anioinicio :    form.value.anioinicio,
-      aniofin :       form.value.aniofin,
-      latitud :       form.value.latitud,
-      longitud :      form.value.longitud
-      }
-
-    /*
-    if (id === undefined){
-      return {
-        nombre :        form.value.nombre,
-        tipo :          form.value.tipo,
-        direccion :     form.value.direccion,
-        anioinicio :    form.value.anioinicio,
-        aniofin :       form.value.aniofin,
-        latitud :       form.value.latitud,
-        longitud :      form.value.longitud
-        }
-    } else {
-      return {id:             id,
-        nombre :        form.value.nombre,
-        tipo :          form.value.tipo,
-        direccion :     form.value.direccion,
-        anioinicio :    form.value.anioinicio,
-        aniofin :       form.value.aniofin,
-        latitud :       form.value.latitud,
-        longitud :      form.value.longitud
-        }
-    } */
-  }
-
   crearBoliche(): void{
-    const BOLICHE : Boliche = this.cargarObjectoBoliche(this.id, this.form);
+
+    const BOLICHE : Boliche = {
+      nombre :            this.form.value.nombre,
+      tipo :              this.form.value.tipo,
+      direccion :         this.form.value.direccion,
+      anioinicio :        this.form.value.anioinicio,
+      aniofin :           this.form.value.aniofin,
+      latitud :           this.form.value.latitud,
+      longitud :          this.form.value.longitud,
+      fechaverificada :   this.form.value.fechaverificada }
+    
+    if(BOLICHE.fechaverificada == undefined){
+      BOLICHE.fechaverificada = 0;
+    }
 
     this._bolicheService.guardarBoliche(BOLICHE).then( () => {
       this._bolicheService.setBoliche(BOLICHE);
@@ -114,7 +93,21 @@ export class CrearBolicheComponent implements OnInit, OnDestroy {
   }
 
   editarBoliche(): void{
-    const BOLICHE : Boliche = this.cargarObjectoBoliche(this.id, this.form);
+
+    const BOLICHE : Boliche = {
+      id :                this.id,
+      nombre :            this.form.value.nombre,
+      tipo :              this.form.value.tipo,
+      direccion :         this.form.value.direccion,
+      anioinicio :        this.form.value.anioinicio,
+      aniofin :           this.form.value.aniofin,
+      latitud :           this.form.value.latitud,
+      longitud :          this.form.value.longitud,
+      fechaverificada :   this.form.value.fechaverificada }
+
+    if(BOLICHE.fechaverificada == undefined){
+      BOLICHE.fechaverificada = 0;
+    }
 
     this._bolicheService.editarBoliche(BOLICHE).then( () => {
       this._bolicheService.setBoliche(BOLICHE);
@@ -140,13 +133,11 @@ export class CrearBolicheComponent implements OnInit, OnDestroy {
   limpiarFormulario(): void{
     this.form.reset();
     this.id = undefined; //'';
-    //const BOLICHE : Boliche = this.cargarObjectoBoliche(this.id, this.form);
-    //this._bolicheService.setBoliche(BOLICHE);
     this.verAlerta = false;
   }
 
   ngOnDestroy(): void {
-  //  this.suscription.unsubscribe();
+    this.suscription?.unsubscribe();
   }
 
 }

@@ -32,17 +32,25 @@
                 <input type="text" formControlName="direccion" class="form-control" placeholder="Dirección">
             </div>           
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <div class="input-group mb-3">
                         <span class="input-group-text"><i class="far fa-calendar" [ngClass]="getClase('anioinicio')"></i></span>
                         <input type="number" formControlName="anioinicio" class="form-control" placeholder="Año inicio">
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <div class="input-group mb-3">
                         <span class="input-group-text"><i class="far fa-calendar" [ngClass]="getClase('aniofin')"></i></span>
                         <input type="number" formControlName="aniofin" class="form-control" placeholder="Año cierre">
                     </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" formControlName="fechaverificada" type="checkbox" value="" id="checkfecha">
+                        <label class="form-check-label" for="checkfecha">
+                          Fecha verificada
+                        </label>
+                      </div>
                 </div>
             </div>
             <div class="row">

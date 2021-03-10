@@ -5,8 +5,9 @@
                 <th>Nombre</th>
                 <th>Tipo</th>
                 <th>Dirección</th>
-                <th (click)="activarModoBorrar()">Año inicio</th>
-                <th (click)="activarModoEdicion()" >Año cierre</th>
+                <th (click)="activarModoBorrar()">Inicio</th>
+                <th (click)="activarModoEdicion()">Cierre</th>
+                <th>Fecha OK</th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -19,6 +20,7 @@
                 <td>{{boliche.direccion}}</td>
                 <td>{{boliche.anioinicio}}</td>
                 <td>{{boliche.aniofin | aniocierre}}</td>
+                <td><i [ngClass]="boliche.fechaverificada==1 ? 'far fa-check' : 'far fa-times'"></i></td>
                 <td *ngIf="modoEdicion()"><i (click)="editarBoliche(boliche)" class='far fa-edit'></i></td>
                 <td *ngIf="modoBorrar()"><i (click)="eliminarBoliche(boliche.id)" class='far fa-trash-alt'></i></td>
                 <td><i (click)="posicionarBoliche(boliche)" class='far fa-map-marker'></i></td>

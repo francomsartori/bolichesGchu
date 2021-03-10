@@ -21,7 +21,7 @@ export class BolicheService {
   }
 
   constructor( private firestore: AngularFirestore) { 
-    this.modoEdicion = true;
+    this.modoEdicion = false;
     this.modoBorrar = false;
     this.listadoBoliches = []; //
 
