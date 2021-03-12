@@ -59,4 +59,8 @@ export class NavbarComponent implements OnInit, OnDestroy {
       this. tituloPosicionarMapa = 'Ocultar todos en mapa';    
     }
   }
+
+  arriba(){
+    window.scroll(0,0);
+  }
 }

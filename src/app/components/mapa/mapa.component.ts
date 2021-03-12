@@ -76,8 +76,6 @@ export class MapaComponent implements OnInit {
         this.marker.openPopup();
       }
 
-      //this.marker.addTo(this.map).bindPopup(texto as string).openPopup();
-
       this.listaMarkers.push(this.marker);
     }
   }

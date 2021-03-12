@@ -2,3 +2,9 @@ section{
     margin-top: 70px;
     margin-left: 10px;
 }
+
+@media (max-width: 768px) {
+    section { 
+        margin-top: 30px;
+    }
+}; 

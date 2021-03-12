@@ -11,3 +11,9 @@ a{
     margin-right: 5px;
     margin-bottom: 2px;
 }
+
+@media (max-width: 768px) {
+    .brand { 
+        font-size: 1.3rem;
+    }
+}; 
