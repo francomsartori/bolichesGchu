@@ -1,0 +1,9 @@
+{
+  "extends": "@sanity/tsconfig/recommended",
+  "include": ["./schemaTypes/**/*.ts", "./sanity.config.ts"],
+  "compilerOptions": {
+    "paths": {
+      "$schema": ["./schemaTypes/index.ts"]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+---
+export const prerender = true;
+
+import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.tsx';
+---
+
+<Layout title="Reportar un dato — Boliches Gualeguaychú" description="Corregí o sumá información sobre un boliche de Gualeguaychú.">
+  <a href="/" class="mb-4 inline-block text-sm text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200">
+    ← Volver al listado
+  </a>
+
+  <h1 class="mb-1 text-2xl font-bold">Corregí o sumá un dato</h1>
+  <p class="mb-6 text-slate-600 dark:text-slate-400">
+    Este es un archivo de origen comunitario: los datos pueden tener errores, estar
+    desactualizados, o faltar un boliche que te acordás. Contanos qué viste mal o qué
+    falta y lo revisamos.
+  </p>
+
+  <div class="rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900">
+    <ContactForm client:load />
+  </div>
+</Layout>

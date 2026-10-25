@@ -1,0 +1,1541 @@
+[
+  {
+    "_id": "boliche-barbaro",
+    "nombre": "Bárbaro",
+    "slug": "barbaro",
+    "tipo": "boliche",
+    "direccion": "Bolivar y Maipú",
+    "ubicacion": {
+      "lat": -33.0110251952411,
+      "lng": -58.51944434562372
+    },
+    "anioInicio": 1976,
+    "anioFin": 1994,
+    "verificado": true,
+    "detalle": "Fundado por Alberto Bahillo y Horacio Rivas el 18/11/1976; Bahillo se fue a los 3 años y Rivas quedó al frente. Su sello distintivo era un tobogán de madera diseñado por el arquitecto Raúl Medrano que bajaba hasta la pista, \"lo suficientemente ancho como para que una pareja se arrojara por allí\". Hizo elecciones de reinas, el concurso Mr. Facha y sorteó un Jeep. Pasaron por sus bandejas DJs como Jorge Balerdi, Juan Carlos Isola, Tachilo Fernández, Chino Fernández, Chocho Iriarte y Mariano Andrade. Cerró en 1994, tras la muerte del hijo de Rivas y el avance de la competencia. Fuente: https://www.eldiaonline.com/barbaro-aranjuez-y-sotap-tres-iconos-la-adolescencia-una-generacion-n354311"
+  },
+  {
+    "_id": "boliche-majada-onda",
+    "nombre": "Majada Onda",
+    "slug": "majada-onda",
+    "tipo": "boliche",
+    "direccion": "Av. Del Valle 508",
+    "ubicacion": {
+      "lat": -33.014380337846184,
+      "lng": -58.5098882360148
+    },
+    "anioInicio": 1980,
+    "anioFin": 1990,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-astrea",
+    "nombre": "Astrea",
+    "slug": "astrea",
+    "tipo": "boliche",
+    "direccion": "Urquiza 513",
+    "ubicacion": {
+      "lat": -33.0087009334458,
+      "lng": -58.51044043510438
+    },
+    "anioInicio": null,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true
+  },
+  {
+    "_id": "boliche-sotap",
+    "nombre": "Sotap",
+    "slug": "sotap",
+    "tipo": "boliche",
+    "direccion": "Av. Morrogh Bernard 130",
+    "ubicacion": {
+      "lat": -33.01016149490423,
+      "lng": -58.505338058610256
+    },
+    "anioInicio": 1987,
+    "anioFin": 1997,
+    "verificado": true,
+    "detalle": "Abierto en 1987 por Fernando Dacal (22), su hermano Mariano Dacal (19) y Carlos \"Mundolo\" Barello (21). El nombre es \"Pato's\" al revés, por el apodo de Fernando. Tenía tres pisos, cinco barras y dos cabinas de DJ; al estar lejos del centro armaron un micro desde el Hospital y después salían con un tractor amarillo repartiendo volantes. Llevó a Marcelo Tinelli, a Pablo y Pachu de Videomatch, a Yayo, a Los Gauchos y, en el O'Barquinho alquilado para la ocasión, a Mercedes Sosa y Sandra Mihanovich. En 2013 Fernando organizó un reencuentro para los clientes de toda la vida, muchos de los cuales se conocieron y formaron pareja en el boliche. Fuente: https://www.eldiaonline.com/barbaro-aranjuez-y-sotap-tres-iconos-la-adolescencia-una-generacion-n354311"
+  },
+  {
+    "_id": "boliche-o-barquinho",
+    "nombre": "O Barquinho",
+    "slug": "o-barquinho",
+    "tipo": "boliche",
+    "direccion": "Colombo 985",
+    "ubicacion": {
+      "lat": -33.00670233997468,
+      "lng": -58.51866368806981
+    },
+    "anioInicio": 1990,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true
+  },
+  {
+    "_id": "boliche-charlot",
+    "nombre": "Charlot",
+    "slug": "charlot",
+    "tipo": "boliche",
+    "direccion": "Ayacucho y San Martín",
+    "ubicacion": {
+      "lat": -33.01015206012897,
+      "lng": -58.520159314392714
+    },
+    "anioInicio": 1990,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true
+  },
+  {
+    "_id": "boliche-rut-66",
+    "nombre": "Route 66",
+    "slug": "rut-66",
+    "tipo": "boliche",
+    "direccion": "25 de Mayo y Maipú",
+    "ubicacion": {
+      "lat": -33.0097039926472,
+      "lng": -58.51949597830984
+    },
+    "anioInicio": 1997,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true
+  },
+  {
+    "_id": "boliche-strong",
+    "nombre": "Strong",
+    "slug": "strong",
+    "tipo": "boliche",
+    "direccion": "Urquiza 513",
+    "ubicacion": {
+      "lat": -33.0087009334458,
+      "lng": -58.51044043510438
+    },
+    "anioInicio": 1990,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true
+  },
+  {
+    "_id": "boliche-la-chacra",
+    "nombre": "La Chacra",
+    "slug": "la-chacra",
+    "tipo": "boliche",
+    "direccion": "Bolivar e Italia",
+    "ubicacion": {
+      "lat": -33.01109366583119,
+      "lng": -58.51534244307919
+    },
+    "anioInicio": 1997,
+    "anioFin": 2001,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-quintana-roo",
+    "nombre": "Quintana Roo",
+    "slug": "quintana-roo",
+    "tipo": "boliche",
+    "direccion": "San Lorenzo y Gervasio Méndez",
+    "ubicacion": {
+      "lat": -33.01211841280141,
+      "lng": -58.50552178380806
+    },
+    "anioInicio": 1997,
+    "anioFin": 2001,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-quimica",
+    "nombre": "Química",
+    "slug": "quimica",
+    "tipo": "boliche",
+    "direccion": "Urquiza y Pellegrini",
+    "ubicacion": {
+      "lat": -33.00877145941401,
+      "lng": -58.512516844192206
+    },
+    "anioInicio": 2000,
+    "anioFin": 2004,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-garage",
+    "nombre": "Garage",
+    "slug": "garage",
+    "tipo": "boliche",
+    "direccion": "Rocamora 163",
+    "ubicacion": {
+      "lat": -33.011256930451225,
+      "lng": -58.52115598652594
+    },
+    "anioInicio": 2000,
+    "anioFin": 2004,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-le-front",
+    "nombre": "Le Front",
+    "slug": "le-front",
+    "tipo": "boliche",
+    "direccion": "Av. Parque 350",
+    "ubicacion": {
+      "lat": -33.01800646242312,
+      "lng": -58.50769332596955
+    },
+    "anioInicio": 2002,
+    "anioFin": 2007,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-bohemia",
+    "nombre": "Bohemia",
+    "slug": "bohemia",
+    "tipo": "bar",
+    "direccion": "Colombo 937",
+    "ubicacion": {
+      "lat": -33.00663582326433,
+      "lng": -58.51753801982104
+    },
+    "anioInicio": 2003,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true
+  },
+  {
+    "_id": "boliche-alfonsina-y-el-bar",
+    "nombre": "Alfonsina y El Bar",
+    "slug": "alfonsina-y-el-bar",
+    "tipo": "bar",
+    "direccion": "25 de Mayo 186",
+    "ubicacion": {
+      "lat": -33.00905267880032,
+      "lng": -58.50460855318658
+    },
+    "anioInicio": 2004,
+    "anioFin": 2016,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-el-estudio",
+    "nombre": "El Estudio",
+    "slug": "el-estudio",
+    "tipo": "pub",
+    "direccion": "Urquiza 947",
+    "ubicacion": {
+      "lat": -33.0090067916925,
+      "lng": -58.517724105970046
+    },
+    "anioInicio": 2004,
+    "anioFin": 2008,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-plastico",
+    "nombre": "Plástico",
+    "slug": "plastico",
+    "tipo": "pub",
+    "direccion": "25 de Mayo 560",
+    "ubicacion": {
+      "lat": -33.009248024911436,
+      "lng": -58.511049521098364
+    },
+    "anioInicio": 2004,
+    "anioFin": 2008,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-gymup",
+    "nombre": "GymUp",
+    "slug": "gymup",
+    "tipo": "pub",
+    "direccion": "Maipú y 25 de Mayo",
+    "ubicacion": {
+      "lat": -33.00976092430377,
+      "lng": -58.519476862742415
+    },
+    "anioInicio": 2005,
+    "anioFin": 2007,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-bubbas",
+    "nombre": "Bubbas",
+    "slug": "bubbas",
+    "tipo": "boliche",
+    "direccion": "Rocamora y Bolivar",
+    "ubicacion": {
+      "lat": -33.011256930451225,
+      "lng": -58.52115598652594
+    },
+    "anioInicio": 2005,
+    "anioFin": 2007,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-el-cubo",
+    "nombre": "El Cubo",
+    "slug": "el-cubo",
+    "tipo": "boliche",
+    "direccion": "Av. del Valle 312",
+    "ubicacion": {
+      "lat": -33.0142138175535,
+      "lng": -58.50628981063966
+    },
+    "anioInicio": 2005,
+    "anioFin": 2008,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-la-casa-del-vino",
+    "nombre": "La Casa del Vino",
+    "slug": "la-casa-del-vino",
+    "tipo": "pub",
+    "direccion": "Leandro N. Alem 252",
+    "ubicacion": {
+      "lat": -33.0122010381519,
+      "lng": -58.50636408488571
+    },
+    "anioInicio": 2006,
+    "anioFin": 2010,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-lemon",
+    "nombre": "Lemon",
+    "slug": "lemon",
+    "tipo": "boliche",
+    "direccion": "Alem y Bolivar",
+    "ubicacion": {
+      "lat": -33.01058434925102,
+      "lng": -58.506393972059335
+    },
+    "anioInicio": 2007,
+    "anioFin": 2010,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-che-loco",
+    "nombre": "Che Loco",
+    "slug": "che-loco",
+    "tipo": "bar",
+    "direccion": "Bolivar 810",
+    "ubicacion": {
+      "lat": -33.01089152414939,
+      "lng": -58.51532289973774
+    },
+    "anioInicio": 2008,
+    "anioFin": 2017,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-panorama",
+    "nombre": "Panorama",
+    "slug": "panorama",
+    "tipo": "boliche",
+    "direccion": "Alem y Gervasio Mendez",
+    "ubicacion": {
+      "lat": -33.012230762817715,
+      "lng": -58.506363194163264
+    },
+    "anioInicio": 2008,
+    "anioFin": 2010,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-malibu",
+    "nombre": "Malibú",
+    "slug": "malibu",
+    "tipo": "boliche",
+    "direccion": "San Lorenzo y Gervasio Mendez",
+    "ubicacion": {
+      "lat": -33.01223307169351,
+      "lng": -58.50560192187016
+    },
+    "anioInicio": 2010,
+    "anioFin": 2014,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-gitano",
+    "nombre": "Gitano",
+    "slug": "gitano",
+    "tipo": "pub",
+    "direccion": "Rocamora 239",
+    "ubicacion": {
+      "lat": -33.01236571338644,
+      "lng": -58.52109417837398
+    },
+    "anioInicio": 2010,
+    "anioFin": 2012,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-soul-disco",
+    "nombre": "Soul Disco",
+    "slug": "soul-disco",
+    "tipo": "boliche",
+    "direccion": "25 de Mayo 170",
+    "ubicacion": {
+      "lat": -33.00902797805906,
+      "lng": -58.50443982096589
+    },
+    "anioInicio": 2010,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true
+  },
+  {
+    "_id": "boliche-veru",
+    "nombre": "Verú",
+    "slug": "veru",
+    "tipo": "boliche",
+    "direccion": "25 de Mayo 339",
+    "ubicacion": {
+      "lat": -33.00932932131614,
+      "lng": -58.507128856447856
+    },
+    "anioInicio": 2014,
+    "anioFin": 2017,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-arata-bar",
+    "nombre": "Arata Bar",
+    "slug": "arata-bar",
+    "tipo": "bar",
+    "direccion": "Pronunciamiento 98",
+    "ubicacion": {
+      "lat": -33.009180543736015,
+      "lng": -58.50398361684238
+    },
+    "anioInicio": 2015,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-zero-lounge-club",
+    "nombre": "Zero Lounge Club",
+    "slug": "zero-lounge-club",
+    "tipo": "pub",
+    "direccion": "Bolivar 834",
+    "ubicacion": {
+      "lat": -33.010901749660135,
+      "lng": -58.51553559732744
+    },
+    "anioInicio": 2015,
+    "anioFin": 2019,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-monte-zion",
+    "nombre": "Monte Zion",
+    "slug": "monte-zion",
+    "tipo": "bar",
+    "direccion": "25 de Mayo 367",
+    "ubicacion": {
+      "lat": -33.009313101243976,
+      "lng": -58.50773136309969
+    },
+    "anioInicio": 2015,
+    "anioFin": 2017,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-socotroco",
+    "nombre": "Socotroco",
+    "slug": "socotroco",
+    "tipo": "pub",
+    "direccion": "25 de Mayo 185",
+    "ubicacion": {
+      "lat": -33.00926629656586,
+      "lng": -58.504567018864265
+    },
+    "anioInicio": 2016,
+    "anioFin": 2018,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-la-solapa",
+    "nombre": "La Solapa",
+    "slug": "la-solapa",
+    "tipo": "bar",
+    "direccion": "Alem y Bolivar",
+    "ubicacion": {
+      "lat": -33.01060673924785,
+      "lng": -58.50636272395777
+    },
+    "anioInicio": 2016,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "anioFin": 2025
+  },
+  {
+    "_id": "boliche-cubata-bar",
+    "nombre": "Cubata Bar & Juma Destilería",
+    "slug": "cubata-bar",
+    "tipo": "pub",
+    "direccion": "Leandro Alem 141",
+    "ubicacion": {
+      "lat": -33.01053950624984,
+      "lng": -58.506422466040796
+    },
+    "verificado": false,
+    "detalle": "Entre 2017 y 2019 funcionó en 25 de Mayo 140.",
+    "anioInicio": 2026
+  },
+  {
+    "_id": "boliche-guetto-night-club",
+    "nombre": "Guetto Night Club",
+    "slug": "guetto-night-club",
+    "tipo": "boliche",
+    "direccion": "25 de Mayo 175",
+    "ubicacion": {
+      "lat": -33.00917585177824,
+      "lng": -58.50439249126097
+    },
+    "anioInicio": 2018,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-maldita-birra",
+    "nombre": "Maldita Birra",
+    "slug": "maldita-birra",
+    "tipo": "pub",
+    "direccion": "Urquiza y San Lorenzo",
+    "ubicacion": {
+      "lat": -33.00848840666521,
+      "lng": -58.505662472379996
+    },
+    "anioInicio": 2020,
+    "verificado": false,
+    "detalle": "Hasta 2024 funcionó en 3 de Caballería 432."
+  },
+  {
+    "_id": "boliche-leblon-bar",
+    "nombre": "Leblon Bar",
+    "slug": "leblon-bar",
+    "tipo": "pub",
+    "direccion": "25 de Mayo 130",
+    "ubicacion": {
+      "lat": -33.009019399362124,
+      "lng": -58.50367850793072
+    },
+    "anioInicio": 2020,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true
+  },
+  {
+    "_id": "boliche-la-comoda-bar-de-arte",
+    "nombre": "Roderick by La Cómoda",
+    "slug": "la-comoda-bar-de-arte",
+    "tipo": "bar",
+    "direccion": "Bolivar 666",
+    "ubicacion": {
+      "lat": -33.010771597767906,
+      "lng": -58.512744846928975
+    },
+    "anioInicio": 2026,
+    "verificado": false,
+    "detalle": "Antes funcionaba como La Cómoda bar de arte."
+  },
+  {
+    "_id": "boliche-ranch-disco",
+    "nombre": "Ranch Disco",
+    "slug": "ranch-disco",
+    "tipo": "boliche",
+    "direccion": "Bolivar e Italia",
+    "ubicacion": {
+      "lat": -33.01108795043324,
+      "lng": -58.51535989500635
+    },
+    "anioInicio": 1980,
+    "anioFin": 1990,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-el-angel",
+    "nombre": "El Angel",
+    "slug": "el-angel",
+    "tipo": "boliche",
+    "direccion": "San Lorenzo 79",
+    "ubicacion": {
+      "lat": -33.009590283918506,
+      "lng": -58.505583101897
+    },
+    "anioInicio": 1980,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-lafak",
+    "nombre": "Lafak",
+    "slug": "lafak",
+    "tipo": "boliche",
+    "direccion": "Costanera y Obelisco",
+    "ubicacion": {
+      "lat": -33.01043777978262,
+      "lng": -58.50552822477888
+    },
+    "anioInicio": 1980,
+    "anioFin": 1990,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-aranjuez",
+    "nombre": "Aranjuez",
+    "slug": "aranjuez",
+    "tipo": "pub",
+    "direccion": "25 de Mayo y Chacabuco",
+    "ubicacion": {
+      "lat": -33.00970068525508,
+      "lng": -58.51870426951065
+    },
+    "anioInicio": 1981,
+    "anioFin": 1997,
+    "verificado": true,
+    "detalle": "Abierto el 18/09/1981 por Jorge Rizzi en un ex banco reciclado sin tocar su estructura, con mesas de madera y cuero traídas de una talabartería y un escudo con símbolos españoles alusivo a Aranjuez (por el \"Concierto de Aranjuez\"). Convocaba familias, políticos y turistas; lo visitaron los presidentes Carlos Menem y Raúl Alfonsín, y Radio Nacional transmitió un programa desde ahí durante un año. Cada 18 de septiembre festejaba su aniversario con choripaneada y cerveza en la calle. Cerró en 1997 por la diferencia entre el movimiento de semana y fin de semana frente a altos costos de alquiler y sueldos. Fuente: https://www.eldiaonline.com/barbaro-aranjuez-y-sotap-tres-iconos-la-adolescencia-una-generacion-n354311"
+  },
+  {
+    "_id": "boliche-power-disco",
+    "nombre": "Power Disco",
+    "slug": "power-disco",
+    "tipo": "boliche",
+    "direccion": "25 de Mayo 989",
+    "ubicacion": {
+      "lat": -33.00968296272015,
+      "lng": -58.51838270028736
+    },
+    "anioInicio": 1990,
+    "anioFin": 2001,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-arena",
+    "nombre": "Arena",
+    "slug": "arena",
+    "tipo": "boliche",
+    "direccion": "Ayacucho 65",
+    "ubicacion": {
+      "lat": -33.010044534833334,
+      "lng": -58.520308495743265
+    },
+    "anioInicio": 1995,
+    "anioFin": 1997,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-parada-uno",
+    "nombre": "Parada Uno",
+    "slug": "parada-uno",
+    "tipo": "boliche",
+    "direccion": "Concordia y San Lorenzo",
+    "ubicacion": {
+      "lat": -33.01516784736565,
+      "lng": -58.50508559865703
+    },
+    "anioInicio": 1997,
+    "anioFin": 2001,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-hot-port",
+    "nombre": "Hot Port",
+    "slug": "hot-port",
+    "tipo": "pub",
+    "direccion": "Nicaragua y Alem",
+    "ubicacion": {
+      "lat": -33.01721011541768,
+      "lng": -58.50571408180031
+    },
+    "anioInicio": 1997,
+    "anioFin": 1997,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-amarello",
+    "nombre": "Amarello",
+    "slug": "amarello",
+    "tipo": "bar",
+    "direccion": "Av. Morrogh Bernard 90",
+    "ubicacion": {
+      "lat": -33.00898417882823,
+      "lng": -58.503391336669736
+    },
+    "anioInicio": 2000,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-bikini-disco",
+    "nombre": "Bikini Disco",
+    "slug": "bikini-disco",
+    "tipo": "boliche",
+    "direccion": "Av. Morrogh Bernard 90",
+    "ubicacion": {
+      "lat": -33.008911889251486,
+      "lng": -58.50321528758964
+    },
+    "anioInicio": 2000,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-pepe-cuervo",
+    "nombre": "Pepe Cuervo",
+    "slug": "pepe-cuervo",
+    "tipo": "pub",
+    "direccion": "25 de Mayo 785",
+    "ubicacion": {
+      "lat": -33.00957669299869,
+      "lng": -58.514904171676925
+    },
+    "anioInicio": 2000,
+    "anioFin": 2002,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-la-cabana",
+    "nombre": "La Cabaña",
+    "slug": "la-cabana",
+    "tipo": "boliche",
+    "direccion": "Colombo 985",
+    "ubicacion": {
+      "lat": -33.006736997151734,
+      "lng": -58.518633707005954
+    },
+    "anioInicio": 2000,
+    "anioFin": 2014,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-safari",
+    "nombre": "Safari",
+    "slug": "safari",
+    "tipo": "pub",
+    "direccion": "Bolivar y 3 de febrero",
+    "ubicacion": {
+      "lat": -33.01088574419681,
+      "lng": -58.510891687208094
+    },
+    "anioInicio": 2002,
+    "anioFin": 2006,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-el-sitio",
+    "nombre": "El Sitio",
+    "slug": "el-sitio",
+    "tipo": "boliche",
+    "direccion": "Bolivar 834",
+    "ubicacion": {
+      "lat": -33.01088740286196,
+      "lng": -58.51552910278108
+    },
+    "anioInicio": 2002,
+    "anioFin": 2006,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-borgona",
+    "nombre": "Borgoña",
+    "slug": "borgona",
+    "tipo": "pub",
+    "direccion": "25 de Mayo 785",
+    "ubicacion": {
+      "lat": -33.00957669299869,
+      "lng": -58.514904171676925
+    },
+    "anioInicio": 2002,
+    "anioFin": 2005,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-el-farolito",
+    "nombre": "El Farolito",
+    "slug": "el-farolito",
+    "tipo": "boliche",
+    "direccion": "Italia 29",
+    "ubicacion": {
+      "lat": -33.00920331744617,
+      "lng": -58.515318849263686
+    },
+    "anioInicio": 2003,
+    "anioFin": 2006,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-la-base",
+    "nombre": "La Base",
+    "slug": "la-base",
+    "tipo": "boliche",
+    "direccion": "Rocamora y Bolivar",
+    "ubicacion": {
+      "lat": -33.01127697413967,
+      "lng": -58.521170538297675
+    },
+    "anioInicio": 2004,
+    "anioFin": 2008,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-tamarindo",
+    "nombre": "Tamarindo",
+    "slug": "tamarindo",
+    "tipo": "boliche",
+    "direccion": "Urquiza y Rosario",
+    "ubicacion": {
+      "lat": -33.00877145941401,
+      "lng": -58.512516844192206
+    },
+    "anioInicio": 2004,
+    "anioFin": 2006,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-macuba",
+    "nombre": "Macuba",
+    "slug": "macuba",
+    "tipo": "boliche",
+    "direccion": "Maestra Piccini y Maipú",
+    "ubicacion": {
+      "lat": -33.017411604183174,
+      "lng": -58.51940961314015
+    },
+    "anioInicio": 2006,
+    "anioFin": 2010,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-babylon",
+    "nombre": "Babylon",
+    "slug": "babylon",
+    "tipo": "pub",
+    "direccion": "Gervasio Mendez 274",
+    "ubicacion": {
+      "lat": -33.012019305396365,
+      "lng": -58.50581825259724
+    },
+    "anioInicio": 2006,
+    "anioFin": 2010,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-punto-90",
+    "nombre": "Punto 90",
+    "slug": "punto-90",
+    "tipo": "boliche",
+    "direccion": "Av. del Valle 312",
+    "ubicacion": {
+      "lat": -33.0142138175535,
+      "lng": -58.50628981063966
+    },
+    "anioInicio": 2008,
+    "anioFin": 2012,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-don-ramon",
+    "nombre": "Don Ramón",
+    "slug": "don-ramon",
+    "tipo": "boliche",
+    "direccion": "Del Valle y España",
+    "ubicacion": {
+      "lat": -33.014834305020365,
+      "lng": -58.51739414394164
+    },
+    "anioInicio": 2008,
+    "anioFin": 2012,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-la-vieja-estacion",
+    "nombre": "La Vieja Estación",
+    "slug": "la-vieja-estacion",
+    "tipo": "boliche",
+    "direccion": "Maestra Piccini y Ayacucho",
+    "ubicacion": {
+      "lat": -33.017453060180166,
+      "lng": -58.51993033200732
+    },
+    "anioInicio": 2008,
+    "anioFin": 2010,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-gruvi",
+    "nombre": "Gruvi",
+    "slug": "gruvi",
+    "tipo": "boliche",
+    "direccion": "Del Valle y España",
+    "ubicacion": {
+      "lat": -33.01486996090016,
+      "lng": -58.51739915673324
+    },
+    "anioInicio": 2010,
+    "anioFin": 2012,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-mastodonte",
+    "nombre": "Mastodonte",
+    "slug": "mastodonte",
+    "tipo": "boliche",
+    "direccion": "San Lorenzo y Gervasio Mendez",
+    "ubicacion": {
+      "lat": -33.01223307169351,
+      "lng": -58.50560192187016
+    },
+    "anioInicio": 2014,
+    "anioFin": 2016,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-elbumm",
+    "nombre": "Bummper",
+    "slug": "elbumm",
+    "tipo": "boliche",
+    "direccion": "Rocamora y Maestra Piccini",
+    "ubicacion": {
+      "lat": -33.01747445508022,
+      "lng": -58.52132769345162
+    },
+    "anioInicio": 2015,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-verde-urbano",
+    "nombre": "Verde Urbano",
+    "slug": "verde-urbano",
+    "tipo": "boliche",
+    "direccion": "Bolivar 834",
+    "ubicacion": {
+      "lat": -33.010868120041,
+      "lng": -58.51557934067151
+    },
+    "anioInicio": 2015,
+    "anioFin": 2015,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-wanako",
+    "nombre": "Wanako",
+    "slug": "wanako",
+    "tipo": "boliche",
+    "direccion": "Rocamora 299",
+    "ubicacion": {
+      "lat": -33.01385488514519,
+      "lng": -58.52108278553798
+    },
+    "anioInicio": 2015,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-othra",
+    "nombre": "Othra",
+    "slug": "othra",
+    "tipo": "bar",
+    "direccion": "Andrade 268",
+    "ubicacion": {
+      "lat": -33.0112074403648,
+      "lng": -58.505831136310526
+    },
+    "anioInicio": 2015,
+    "anioFin": 2015,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-akua",
+    "nombre": "Akua",
+    "slug": "akua",
+    "tipo": "boliche",
+    "direccion": "Av. del Valle 312",
+    "ubicacion": {
+      "lat": -33.0142138175535,
+      "lng": -58.50628981063966
+    },
+    "anioInicio": 2016,
+    "anioFin": 2019,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-katmandu-bar",
+    "nombre": "Katmandú bar",
+    "slug": "katmandu-bar",
+    "tipo": "bar",
+    "direccion": "Av. Del Valle Y Alem",
+    "ubicacion": {
+      "lat": -33.014217191244306,
+      "lng": -58.50612686643813
+    },
+    "anioInicio": 2016,
+    "anioFin": 2018,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-lotus",
+    "nombre": "Lotus",
+    "slug": "lotus",
+    "tipo": "boliche",
+    "direccion": "Colombo 985",
+    "ubicacion": {
+      "lat": -33.006736997151734,
+      "lng": -58.518633707005954
+    },
+    "anioInicio": 2017,
+    "anioFin": 2020,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-cao-club",
+    "nombre": "Cao Club",
+    "slug": "cao-club",
+    "tipo": "bar",
+    "direccion": "Rocamora y Maestra Piccini",
+    "ubicacion": {
+      "lat": -33.01747445508022,
+      "lng": -58.52132769345162
+    },
+    "anioInicio": 2018,
+    "anioFin": 2019,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-alabama",
+    "nombre": "Alabama",
+    "slug": "alabama",
+    "tipo": "bar",
+    "direccion": "San Lorenzo y Concordia",
+    "ubicacion": {
+      "lat": -33.01515089199118,
+      "lng": -58.50530615099013
+    },
+    "anioInicio": 2018,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "anioFin": 2021
+  },
+  {
+    "_id": "boliche-baum",
+    "nombre": "Baum",
+    "slug": "baum",
+    "tipo": "bar",
+    "direccion": "Av. Morrogh Bernard 140",
+    "ubicacion": {
+      "lat": -33.0104216156298,
+      "lng": -58.50534960791127
+    },
+    "anioInicio": 2018,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-favela-club",
+    "nombre": "Favela Club",
+    "slug": "favela-club",
+    "tipo": "pub",
+    "direccion": "25 de Mayo 148",
+    "ubicacion": {
+      "lat": -33.00907159622492,
+      "lng": -58.5036947870396
+    },
+    "anioInicio": 2020,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "anioFin": 2021
+  },
+  {
+    "_id": "boliche-liverpool",
+    "nombre": "Liverpool",
+    "slug": "liverpool",
+    "tipo": "bar",
+    "direccion": "3 de Febrero 133",
+    "anioInicio": 2020,
+    "verificado": false,
+    "detalle": "Sin datos",
+    "ubicacion": {
+      "lat": -33.01056605679614,
+      "lng": -58.510764827805204
+    }
+  },
+  {
+    "_id": "boliche-nebraska",
+    "nombre": "Nebraska",
+    "slug": "nebraska",
+    "tipo": "bar",
+    "direccion": "San Lorenzo y Concordia",
+    "ubicacion": {
+      "lat": -33.01515089199118,
+      "lng": -58.50530615099013
+    },
+    "anioInicio": 2022,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-aquarela",
+    "nombre": "Aquarela",
+    "slug": "aquarela",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "direccion": "Rocamora 163",
+    "ubicacion": {
+      "lat": -33.011256930451225,
+      "lng": -58.52115598652594
+    },
+    "cerrado": true,
+    "anioInicio": null
+  },
+  {
+    "_id": "boliche-flamingo",
+    "nombre": "Flamingo",
+    "slug": "flamingo",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null
+  },
+  {
+    "_id": "boliche-factori",
+    "nombre": "Factory",
+    "slug": "factori",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null
+  },
+  {
+    "_id": "boliche-terraza",
+    "nombre": "Terraza",
+    "slug": "terraza",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null
+  },
+  {
+    "_id": "boliche-chocolate",
+    "nombre": "Chocolate",
+    "slug": "chocolate",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null,
+    "direccion": "Florencio Sánchez (hoy Centro Cultural Gualeguaychú)",
+    "ubicacion": {
+      "lat": -33.0201227,
+      "lng": -58.5094569
+    }
+  },
+  {
+    "_id": "boliche-explosion",
+    "nombre": "Explosión Bailable",
+    "slug": "explosion",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null,
+    "direccion": "25 de Mayo 339",
+    "ubicacion": {
+      "lat": -33.00932932131614,
+      "lng": -58.507128856447856
+    }
+  },
+  {
+    "_id": "boliche-crocodilo",
+    "nombre": "Crocodilo",
+    "slug": "crocodilo",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null,
+    "direccion": "San Lorenzo y Gervasio Mendez",
+    "ubicacion": {
+      "lat": -33.01223307169351,
+      "lng": -58.50560192187016
+    }
+  },
+  {
+    "_id": "boliche-luna-de-alen",
+    "nombre": "Luna de Alen",
+    "slug": "luna-de-alen",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null
+  },
+  {
+    "_id": "boliche-la-diabla",
+    "nombre": "La Diabla",
+    "slug": "la-diabla",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null
+  },
+  {
+    "_id": "boliche-six",
+    "nombre": "Six",
+    "slug": "six",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null,
+    "direccion": "Rocamora 163",
+    "ubicacion": {
+      "lat": -33.011256930451225,
+      "lng": -58.52115598652594
+    }
+  },
+  {
+    "_id": "boliche-panza-verde",
+    "nombre": "Panza Verde",
+    "slug": "panza-verde",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null,
+    "direccion": "Doello Jurado y Alem",
+    "ubicacion": {
+      "lat": -33.01292990092709,
+      "lng": -58.506236112768285
+    }
+  },
+  {
+    "_id": "boliche-nitro",
+    "nombre": "Nitro",
+    "slug": "nitro",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null
+  },
+  {
+    "_id": "boliche-el-templo",
+    "nombre": "El Templo",
+    "slug": "el-templo",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null
+  },
+  {
+    "_id": "boliche-zepia",
+    "nombre": "Zepia",
+    "slug": "zepia",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null
+  },
+  {
+    "_id": "boliche-le-port",
+    "nombre": "Le Port",
+    "slug": "le-port",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null
+  },
+  {
+    "_id": "boliche-scorpio",
+    "nombre": "Scorpio Parador",
+    "slug": "scorpio",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "anioInicio": null,
+    "direccion": "Balneario Ñandubaysal",
+    "ubicacion": {
+      "lat": -33.0672044,
+      "lng": -58.3885539
+    }
+  },
+  {
+    "_id": "boliche-fono-bar",
+    "nombre": "Fono Bar",
+    "slug": "fono-bar",
+    "tipo": "boliche",
+    "verificado": false,
+    "detalle": "Sin datos",
+    "cerrado": true,
+    "anioInicio": null
+  },
+  {
+    "_id": "boliche-tutankamon",
+    "nombre": "Tutankamón",
+    "slug": "tutankamon",
+    "tipo": "boliche",
+    "anioInicio": null,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Año de apertura aproximado: 1927 o anterior."
+  },
+  {
+    "_id": "boliche-paris",
+    "nombre": "París",
+    "slug": "paris",
+    "tipo": "boliche",
+    "anioInicio": null,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Año de apertura aproximado: Década de 1950."
+  },
+  {
+    "_id": "boliche-premir",
+    "nombre": "Premir",
+    "slug": "premir",
+    "tipo": "boliche",
+    "anioInicio": 1965,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-nocturno",
+    "nombre": "Nocturno",
+    "slug": "nocturno",
+    "tipo": "boliche",
+    "anioInicio": null,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Año de apertura aproximado: Segunda mitad de la década de 1960."
+  },
+  {
+    "_id": "boliche-til-til",
+    "nombre": "Til Til",
+    "slug": "til-til",
+    "tipo": "boliche",
+    "anioInicio": 1968,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-bang",
+    "nombre": "Bang",
+    "slug": "bang",
+    "tipo": "boliche",
+    "anioInicio": 1969,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-buhos",
+    "nombre": "Búhos",
+    "slug": "buhos",
+    "tipo": "boliche",
+    "anioInicio": 1969,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-mi-tio-archibaldo",
+    "nombre": "Mi Tío Archibaldo",
+    "slug": "mi-tio-archibaldo",
+    "tipo": "boliche",
+    "anioInicio": null,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Año de apertura aproximado: Década de 1970."
+  },
+  {
+    "_id": "boliche-bahillo",
+    "nombre": "Bahillo",
+    "slug": "bahillo",
+    "tipo": "boliche",
+    "anioInicio": 1971,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-chaplin",
+    "nombre": "Chaplin",
+    "slug": "chaplin",
+    "tipo": "boliche",
+    "anioInicio": 1978,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-kalet",
+    "nombre": "Kalet",
+    "slug": "kalet",
+    "tipo": "boliche",
+    "anioInicio": 1979,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-la-casona",
+    "nombre": "La Casona",
+    "slug": "la-casona",
+    "tipo": "boliche",
+    "anioInicio": 1979,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-airwolf",
+    "nombre": "Airwolf",
+    "slug": "airwolf",
+    "tipo": "boliche",
+    "anioInicio": 1986,
+    "cerrado": true,
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-pinta-una-birra",
+    "nombre": "Pinta una Birra",
+    "slug": "pinta-una-birra",
+    "tipo": "bar",
+    "direccion": "San Martín 742",
+    "ubicacion": {
+      "lat": -33.0100672,
+      "lng": -58.5140713
+    },
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-finn-mccool-s",
+    "nombre": "Finn McCool's",
+    "slug": "finn-mccool-s",
+    "tipo": "pub",
+    "direccion": "Bolívar 600",
+    "ubicacion": {
+      "lat": -33.010794,
+      "lng": -58.511578
+    },
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-wanako-exclusivo",
+    "nombre": "Wanako Exclusivo",
+    "slug": "wanako-exclusivo",
+    "tipo": "bar",
+    "ubicacion": {
+      "lat": -33.0136843,
+      "lng": -58.52102
+    },
+    "verificado": false,
+    "detalle": "Sin datos",
+    "direccion": "Av. Rocamora 319"
+  },
+  {
+    "_id": "boliche-everest-bar-pool",
+    "nombre": "Everest Bar & Pool",
+    "slug": "everest-bar-pool",
+    "tipo": "bar",
+    "direccion": "25 de Mayo 552",
+    "ubicacion": {
+      "lat": -33.0092848,
+      "lng": -58.5109886
+    },
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-don-juan-bar-food",
+    "nombre": "Don Juan, Bar & Food",
+    "slug": "don-juan-bar-food",
+    "tipo": "bar",
+    "direccion": "San Martín y Chalup",
+    "ubicacion": {
+      "lat": -33.0102483,
+      "lng": -58.5115366
+    },
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "boliche-metta-pool-bar",
+    "nombre": "Mettā Pool Bar",
+    "slug": "metta-pool-bar",
+    "tipo": "bar",
+    "direccion": "Leandro N. Alem 383",
+    "ubicacion": {
+      "lat": -33.014021,
+      "lng": -58.5058205
+    },
+    "verificado": false,
+    "detalle": "Sin datos"
+  }
+]

@@ -1,0 +1,104 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = 'Explorá los boliches de Gualeguaychú a través del tiempo.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/disco-ball.png" />
+    <title>{title}</title>
+    <script is:inline>
+      (function () {
+        var theme = localStorage.getItem('theme') || 'light';
+        document.documentElement.classList.toggle('dark', theme === 'dark');
+      })();
+    </script>
+  </head>
+  <body class="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4">
+        <a href="/" class="flex items-center gap-2 text-lg font-bold tracking-tight">
+          <img src="/disco-ball.png" alt="" class="h-8 w-8 shrink-0 dark:invert" />
+          <span>Boliches <span class="text-slate-500 dark:text-slate-400">Gualeguaychú</span></span>
+        </a>
+        <div class="flex items-center gap-3">
+          <p class="hidden text-sm text-slate-500 sm:block">
+            La noche de Gualeguaychú, a través del tiempo
+          </p>
+          <button
+            id="theme-toggle"
+            type="button"
+            aria-label="Cambiar a modo oscuro"
+            class="flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-slate-300 text-slate-600 transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
+          >
+            <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden h-5 w-5">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            </svg>
+            <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden h-5 w-5">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="px-2 py-6 sm:px-4 lg:px-8">
+      <slot />
+    </main>
+
+    <footer class="mt-1 border-t border-slate-200 py-6 dark:border-slate-800">
+      <div class="mx-auto flex max-w-5xl flex-col items-center gap-3 px-4 text-xs text-slate-500 sm:flex-row sm:justify-between">
+        <p class="text-center sm:text-left">
+          Archivo comunitario de boliches, bares y pubs de Gualeguaychú — activos y cerrados.
+        </p>
+        <a
+          href="https://bixio.com.ar/?utm_source=bolichesgchu"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex shrink-0 items-center gap-2 rounded-md bg-slate-900 px-3 py-1.5 text-slate-300 transition hover:text-white"
+        >
+          <img src="/bixio-logo.png" alt="Bixio" class="h-6 w-6" />
+          Bixio software a medida
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById('theme-toggle');
+      const sunIcon = document.getElementById('theme-icon-sun');
+      const moonIcon = document.getElementById('theme-icon-moon');
+
+      function syncIcon() {
+        const isDark = document.documentElement.classList.contains('dark');
+        sunIcon?.classList.toggle('hidden', !isDark);
+        moonIcon?.classList.toggle('hidden', isDark);
+        toggle?.setAttribute(
+          'aria-label',
+          isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'
+        );
+      }
+
+      toggle?.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        syncIcon();
+      });
+
+      syncIcon();
+    </script>
+  </body>
+</html>

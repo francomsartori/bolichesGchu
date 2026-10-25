@@ -1,0 +1,23 @@
+---
+export const prerender = true;
+
+import Layout from '../layouts/Layout.astro';
+import ExploreApp from '../components/ExploreApp.tsx';
+import { getBoliches } from '../lib/getBoliches';
+
+const boliches = await getBoliches();
+---
+
+<Layout title="Boliches Gualeguaychú — Explorá la noche de Gualeguaychú">
+  <p class="mb-4 text-slate-600 dark:text-slate-400">
+    Un mapa y listado histórico: boliches, bares, pubs, afters y discos, activos y cerrados, con los años en que funcionaron.
+  </p>
+
+  <ExploreApp client:only="react" boliches={boliches} />
+
+  <div class="mt-6 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-900/50 dark:bg-amber-950/20 dark:text-amber-200">
+    Los datos son de origen comunitario y no están verificados: pueden tener errores o estar
+    desactualizados. Si tenés info para corregir o sumar un boliche,{' '}
+    <a href="/reportar" class="underline hover:text-amber-950 dark:hover:text-amber-100">contanos acá</a>.
+  </div>
+</Layout>
