@@ -59,10 +59,17 @@ const DEFAULT_FILTERS: Filters = {
   anioHasta: '',
 };
 
+// Listado by default on desktop (more info at a glance), tarjetas on
+// mobile (table rows don't fit a narrow screen well).
+function defaultView(): VenueView {
+  if (typeof window === 'undefined') return 'table';
+  return window.matchMedia('(min-width: 1024px)').matches ? 'table' : 'cards';
+}
+
 export default function ExploreApp({ boliches }: Props) {
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [view, setView] = useState<VenueView>('table');
+  const [view, setView] = useState<VenueView>(defaultView);
 
   const filtered = useMemo(() => {
     const desde = filters.anioDesde ? Number(filters.anioDesde) : null;
@@ -96,10 +103,10 @@ export default function ExploreApp({ boliches }: Props) {
       <div className="grid gap-4 lg:grid-cols-2">
         <div className="order-2 lg:order-1 lg:h-[80vh] lg:overflow-y-auto lg:pr-1">
           <div className="mb-3 flex items-center justify-between gap-2">
-            <span className="text-sm text-slate-500 dark:text-slate-400">
+            <ViewToggle view={view} onChange={setView} />
+            <span className="shrink-0 text-sm text-slate-500 dark:text-slate-400">
               {filtered.length} resultado{filtered.length === 1 ? '' : 's'}
             </span>
-            <ViewToggle view={view} onChange={setView} />
           </div>
           <VenueList boliches={filtered} selectedId={selectedId} onSelect={(b) => setSelectedId(b._id)} view={view} />
         </div>
