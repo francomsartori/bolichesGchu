@@ -1,0 +1,22 @@
+---
+export const prerender = true;
+
+import Layout from '../layouts/Layout.astro';
+import DecadeTimeline from '../components/DecadeTimeline.astro';
+import { getBoliches } from '../lib/getBoliches';
+
+const boliches = await getBoliches();
+---
+
+<Layout title="Estadísticas — Boliches Gualeguaychú" description="La noche de Gualeguaychú en números: cuántos boliches, bares y pubs abrieron por década, y cuántos siguen activos.">
+  <a href="/" class="mb-4 inline-block text-sm text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200">
+    ← Volver al listado
+  </a>
+
+  <h1 class="text-3xl font-bold">Estadísticas</h1>
+  <p class="mt-2 text-slate-600 dark:text-slate-400">
+    La noche de Gualeguaychú en números, a partir de los datos cargados.
+  </p>
+
+  <DecadeTimeline boliches={boliches} />
+</Layout>
