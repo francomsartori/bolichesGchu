@@ -85,8 +85,8 @@ const tipoColor = TIPO_PIN_COLORS[boliche.tipo] ?? TIPO_COLORS[boliche.tipo];
     {
       boliche.imagenes && boliche.imagenes.length > 0 ? (
         <div class="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3">
-          {boliche.imagenes.map((src) => (
-            <img src={src} alt={boliche.nombre} class="rounded-lg border border-slate-200 object-cover dark:border-slate-800" />
+          {boliche.imagenes.map((src, i) => (
+            <img src={src} alt={`${boliche.nombre} — foto ${i + 1}`} class="rounded-lg border border-slate-200 object-cover dark:border-slate-800" />
           ))}
         </div>
       ) : (

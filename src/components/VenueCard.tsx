@@ -17,12 +17,7 @@ export default function VenueCard({ boliche, selected = false, onSelect }: Props
 
   return (
     <div
-      role="button"
-      tabIndex={0}
       onClick={() => onSelect?.(boliche)}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') onSelect?.(boliche);
-      }}
       className={`w-full cursor-pointer rounded-lg border p-4 text-left transition hover:border-slate-400 hover:bg-slate-100 dark:hover:border-slate-600 dark:hover:bg-slate-800 ${
         selected
           ? 'border-amber-400 bg-amber-50 dark:bg-slate-800'
@@ -76,14 +71,14 @@ export default function VenueCard({ boliche, selected = false, onSelect }: Props
       </p>
 
       <div className="mt-1 flex items-center justify-between gap-2">
-        <p className="text-sm text-slate-500">{boliche.direccion}</p>
+        <p className="text-sm text-slate-500 dark:text-slate-400">{boliche.direccion}</p>
         <div className="flex shrink-0 items-center gap-2">
           <a
             href={`/reportar?boliche=${encodeURIComponent(boliche.nombre)}`}
             onClick={(e) => e.stopPropagation()}
             aria-label="Comentar o reportar un dato"
             title="Comentar o reportar un dato"
-            className="text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+            className="-m-1 p-1 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />

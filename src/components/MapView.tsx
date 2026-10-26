@@ -112,6 +112,8 @@ export default function MapView({
             key={boliche._id}
             position={[boliche.ubicacion!.lat, boliche.ubicacion!.lng]}
             icon={markerIcon(boliche.tipo, isSelected, estaActivo(boliche))}
+            title={boliche.nombre}
+            alt={boliche.nombre}
             ref={(m) => {
               markerRefs.current[boliche._id] = m;
             }}

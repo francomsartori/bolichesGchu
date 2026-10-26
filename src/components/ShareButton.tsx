@@ -39,7 +39,7 @@ export default function ShareButton({ url, title, className = '', stopPropagatio
       onClick={handleClick}
       aria-label={copied ? 'Enlace copiado' : 'Compartir'}
       title={copied ? 'Enlace copiado' : 'Compartir'}
-      className={`cursor-pointer text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 ${className}`}
+      className={`-m-1 cursor-pointer p-1 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 ${className}`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
