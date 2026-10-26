@@ -220,7 +220,8 @@
       "lng": -58.50460855318658
     },
     "anioInicio": 2004,
-    "anioFin": 2016,
+    "anioFin": 2021,
+    "cerrado": true,
     "verificado": false,
     "detalle": "Sin datos"
   },
@@ -1537,5 +1538,31 @@
     },
     "verificado": false,
     "detalle": "Sin datos"
+  },
+  {
+    "_id": "bar-aperitivo-bar",
+    "nombre": "Aperitivo Bar",
+    "slug": "aperitivo-bar",
+    "tipo": "bar",
+    "ubicacion": {
+      "lat": -33.0174377,
+      "lng": -58.5201137
+    },
+    "verificado": false,
+    "detalle": "Sin datos"
+  },
+  {
+    "_id": "bar-alfonsina",
+    "nombre": "Alfonsina",
+    "slug": "alfonsina",
+    "tipo": "bar",
+    "direccion": "25 de Mayo 186",
+    "ubicacion": {
+      "lat": -33.00905267880032,
+      "lng": -58.50460855318658
+    },
+    "anioInicio": 2025,
+    "verificado": false,
+    "detalle": "Inauguración: 7/6/2025"
   }
 ]

@@ -1,6 +1,7 @@
 import type { Boliche } from '../lib/types';
 import { estaActivo, rangoAnios, tieneDetalle } from '../lib/types';
 import { TIPO_COLORS, TIPO_LABELS, TIPO_PIN_COLORS, contrastText } from '../lib/tipoStyles';
+import ShareButton from './ShareButton';
 
 interface Props {
   boliche: Boliche;
@@ -88,6 +89,7 @@ export default function VenueCard({ boliche, selected = false, onSelect }: Props
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
             </svg>
           </a>
+          <ShareButton url={`/boliche/${boliche.slug}`} title={boliche.nombre} stopPropagation />
           <a
             href={`/boliche/${boliche.slug}`}
             onClick={(e) => e.stopPropagation()}

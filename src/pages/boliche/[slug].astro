@@ -3,6 +3,7 @@ export const prerender = true;
 
 import Layout from '../../layouts/Layout.astro';
 import VenueMap from '../../components/VenueMap.tsx';
+import ShareButton from '../../components/ShareButton.tsx';
 import { getBoliches } from '../../lib/getBoliches';
 import { rangoAnios, estaActivo } from '../../lib/types';
 import { TIPO_LABELS, TIPO_COLORS, TIPO_PIN_COLORS, contrastText } from '../../lib/tipoStyles';
@@ -27,43 +28,56 @@ const tipoColor = TIPO_PIN_COLORS[boliche.tipo] ?? TIPO_COLORS[boliche.tipo];
 
   <div class="flex flex-wrap items-start justify-between gap-2">
     <h1 class="text-3xl font-bold">{boliche.nombre}</h1>
-    <span
-      class="rounded-full px-3 py-1 text-sm font-medium"
-      style={`background-color: ${tipoColor}; color: ${contrastText(tipoColor)}`}
-    >
-      {TIPO_LABELS[boliche.tipo]}
-    </span>
+    <div class="flex shrink-0 items-center gap-3">
+      <ShareButton client:load url={`/boliche/${boliche.slug}`} title={boliche.nombre} />
+      <span
+        class="rounded-full px-3 py-1 text-sm font-medium"
+        style={`background-color: ${tipoColor}; color: ${contrastText(tipoColor)}`}
+      >
+        {TIPO_LABELS[boliche.tipo]}
+      </span>
+    </div>
   </div>
 
-  <div class="mt-2 flex flex-wrap items-center gap-3 text-slate-600 dark:text-slate-300">
-    <span class="text-lg font-medium">
-      {rangoAnios(boliche)}
-      {boliche.verificado && (
-        <span class="ml-1 text-emerald-600 dark:text-emerald-400" title="Dato verificado">✓</span>
-      )}
-    </span>
-    <span class={`text-sm font-medium ${activo ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
-      {activo ? 'Activo' : 'Cerrado'}
-    </span>
-  </div>
+  <div class="mt-6 flex flex-col gap-6 lg:flex-row">
+    <div class="flex flex-col lg:w-1/2">
+      <div class="flex flex-wrap items-center gap-3 text-slate-600 dark:text-slate-300">
+        <span class="text-lg font-medium">
+          {rangoAnios(boliche)}
+          {boliche.verificado && (
+            <span class="ml-1 text-emerald-600 dark:text-emerald-400" title="Dato verificado">✓</span>
+          )}
+        </span>
+        <span
+          class={`rounded-full px-2 py-0.5 text-xs font-medium ${
+            activo
+              ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-300'
+              : 'bg-rose-100 text-rose-700 dark:bg-rose-500/20 dark:text-rose-300'
+          }`}
+        >
+          {activo ? 'Activo' : 'Cerrado'}
+        </span>
+      </div>
 
-  {boliche.direccion && <p class="mt-1 text-slate-500 dark:text-slate-400">{boliche.direccion}</p>}
+      {boliche.direccion && <p class="mt-1 text-slate-500 dark:text-slate-400">{boliche.direccion}</p>}
 
-  {
-    boliche.verificado && (
-      <p class="mt-1 text-xs text-slate-500 dark:text-slate-500">Datos verificados en persona</p>
-    )
-  }
+      {
+        boliche.verificado && (
+          <p class="mt-1 text-xs text-slate-500 dark:text-slate-500">Datos verificados en persona</p>
+        )
+      }
 
-  <div class="mt-6">
-    <VenueMap client:only="react" boliche={boliche} />
-  </div>
+      {boliche.descripcion && <p class="mt-6 leading-relaxed text-slate-600 dark:text-slate-300">{boliche.descripcion}</p>}
 
-  {boliche.descripcion && <p class="mt-6 leading-relaxed text-slate-600 dark:text-slate-300">{boliche.descripcion}</p>}
+      <div class="mt-6 flex flex-1 flex-col rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900">
+        <h2 class="text-sm font-semibold text-slate-600 dark:text-slate-300">Detalle</h2>
+        <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">{boliche.detalle ?? 'Sin datos'}</p>
+      </div>
+    </div>
 
-  <div class="mt-6 rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900">
-    <h2 class="text-sm font-semibold text-slate-600 dark:text-slate-300">Detalle</h2>
-    <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">{boliche.detalle ?? 'Sin datos'}</p>
+    <div class="lg:w-1/2">
+      <VenueMap client:only="react" boliche={boliche} />
+    </div>
   </div>
 
   <div class="mt-6 rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900">
