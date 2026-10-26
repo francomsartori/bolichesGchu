@@ -13,12 +13,13 @@ const boliches = await getBoliches();
     <p class="text-slate-600 dark:text-slate-400">
       Un mapa y listado histórico: boliches, bares, pubs, afters y discos, activos y cerrados, con los años en que funcionaron.
     </p>
-    <a
-      href="/estadisticas"
-      class="shrink-0 rounded-md border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-600 transition hover:bg-slate-100 dark:border-slate-800 dark:text-slate-300 dark:hover:bg-slate-800"
+    <span
+      aria-disabled="true"
+      title="Próximamente"
+      class="shrink-0 cursor-not-allowed rounded-md border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-400 dark:border-slate-800 dark:text-slate-500"
     >
       Ver estadísticas
-    </a>
+    </span>
   </div>
 
   <ExploreApp client:only="react" boliches={boliches} />

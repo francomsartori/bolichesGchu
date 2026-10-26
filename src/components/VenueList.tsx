@@ -1,22 +1,33 @@
 import { useEffect, useState } from 'react';
 import type { Boliche } from '../lib/types';
 import VenueCard from './VenueCard';
+import VenueTable from './VenueTable';
 
-const POR_PAGINA = 5;
+export type VenueView = 'cards' | 'table';
+
+// Table rows are compact so a page can hold far more of them than the
+// taller cards before the list panel's height is used up.
+const POR_PAGINA: Record<VenueView, number> = {
+  table: 20,
+  cards: 8,
+};
 
 interface Props {
   boliches: Boliche[];
   selectedId?: string | null;
   onSelect?: (boliche: Boliche) => void;
+  view?: VenueView;
 }
 
-export default function VenueList({ boliches, selectedId, onSelect }: Props) {
+export default function VenueList({ boliches, selectedId, onSelect, view = 'cards' }: Props) {
   const [pagina, setPagina] = useState(1);
+  const porPagina = POR_PAGINA[view];
 
-  // Vuelve a la página 1 cada vez que cambian los filtros (nueva lista).
+  // Vuelve a la página 1 cada vez que cambian los filtros o la vista
+  // (distinta cantidad de ítems por página).
   useEffect(() => {
     setPagina(1);
-  }, [boliches]);
+  }, [boliches, view]);
 
   if (boliches.length === 0) {
     return (
@@ -26,23 +37,27 @@ export default function VenueList({ boliches, selectedId, onSelect }: Props) {
     );
   }
 
-  const totalPaginas = Math.ceil(boliches.length / POR_PAGINA);
+  const totalPaginas = Math.ceil(boliches.length / porPagina);
   const paginaActual = Math.min(pagina, totalPaginas);
-  const inicio = (paginaActual - 1) * POR_PAGINA;
-  const visibles = boliches.slice(inicio, inicio + POR_PAGINA);
+  const inicio = (paginaActual - 1) * porPagina;
+  const visibles = boliches.slice(inicio, inicio + porPagina);
 
   return (
     <div className="flex flex-col gap-3">
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-1">
-        {visibles.map((boliche) => (
-          <VenueCard
-            key={boliche._id}
-            boliche={boliche}
-            selected={boliche._id === selectedId}
-            onSelect={onSelect}
-          />
-        ))}
-      </div>
+      {view === 'table' ? (
+        <VenueTable boliches={visibles} selectedId={selectedId} onSelect={onSelect} />
+      ) : (
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {visibles.map((boliche) => (
+            <VenueCard
+              key={boliche._id}
+              boliche={boliche}
+              selected={boliche._id === selectedId}
+              onSelect={onSelect}
+            />
+          ))}
+        </div>
+      )}
 
       {totalPaginas > 1 && (
         <div className="flex items-center justify-between pt-1">
