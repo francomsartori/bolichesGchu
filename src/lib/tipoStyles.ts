@@ -14,19 +14,19 @@ export const TIPO_LABELS: Record<TipoBoliche, string> = {
 // tipo without a custom pin image in TIPO_ICONS below.
 export const TIPO_COLORS: Record<TipoBoliche, string> = {
   boliche: '#f97316', // orange
-  bar: '#22c55e', // green
-  pub: '#3b82f6', // blue
+  bar: '#15803d', // green
+  pub: '#2563eb', // blue
   after: '#a855f7', // purple
-  disco: '#ec4899', // pink
+  disco: '#db2777', // pink
 };
 
 // Map pin color for tipos with a custom pin shape (see markerIcon in
 // MapView.tsx). Tipos not listed here fall back to a plain colored dot using
 // TIPO_COLORS instead.
 export const TIPO_PIN_COLORS: Partial<Record<TipoBoliche, string>> = {
-  boliche: '#ec4899', // pink
-  bar: '#22c55e', // green
-  pub: '#3b82f6', // blue
+  boliche: '#db2777', // pink
+  bar: '#15803d', // green
+  pub: '#2563eb', // blue
 };
 
 /** WCAG relative luminance of a sRGB channel (0-255). */
